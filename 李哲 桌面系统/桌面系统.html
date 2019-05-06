@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="FileSaver.js"></script>
+    <script src="jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <main>
+        <section id="icons">
+            <ul>
+                <li id="bgChange">
+                    <img src="1.gif" alt="">
+                    <p>更换壁纸</p>
+                </li>
+                <li id="loadUserFlie">
+                    <img src="1.gif" alt="">
+                    <p>导入文件</p>
+                </li>
+            </ul>
+        </section>
+        <aside>
+            <nav>备忘录</nav>
+            <p>
+                <input type="checkbox" id="bw">
+                <label for="bw">测试测试</label>
+            </p>
+        </aside>
+        
+        <!-- 弹出框保存区 -->
+        <article>
+            <div id="alertWindow">
+                <header>
+                    <span id="alert-title">标题</span>
+                    <span class="close"></span>
+                    <span class="tomax"></span>
+                    <span class="tomin"></span>
+                </header>
+                <div id="userbgbox">
+                    <div class="body" draggable="true">
+                        <!-- <img src="test.jpg" alt=""> -->
+                    </div>
+                    <div class="foot">
+                        <input type="button" value="确定">
+                        <input type="button" value="取消">
+                    </div>
+                </div>
+                <div id="userfile">
+                    <div class="body" draggable="true">
+                        <div>可拖拽文件进来</div>
+                        <input type="file" id="Files">
+                    </div>
+                    <div class="foot">
+                        <input type="button" value="确定">
+                        <input type="button" value="取消">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <section id="start">
+            <img src="360截图17571119109136146.png" alt="">
+        </section>
+        <input type="text">
+        <aside id="time">
+            <div>
+                <p>00:00</p>
+                <p>2019/3/6</p>
+            </div>
+        </aside>
+    </footer>
+
+</body>
+
+<script src="main.js"></script>
+
+</html>
